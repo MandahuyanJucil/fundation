@@ -1,0 +1,136 @@
+/* Create_account.css */
+
+/* GLOBAL STYLES */
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+
+
+/* MAIN STYLE */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+/* FIRST DIV */
+.first_div {
+  text-align: center;
+  margin: 20px;
+}
+
+.main_img_first_div {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* LINE STYLE */
+.main_line {
+  margin: 20px 0;
+}
+
+.main_img_line {
+  width: 80%;
+  height: 2px;
+  background-color: #ddd;
+}
+
+/* SECOND DIV */
+.second_div {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.second_div_logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.second_div_logo img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.second_div_logo h3 {
+  font-family: 'League Spartan', sans-serif;
+  color: #2c3e50;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* FORM STYLE */
+.password-container {
+  margin: 10px 0;
+}
+
+.password-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.password-input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* BUTTON STYLE */
+.seoncd_div_btn button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.seoncd_div_btn button:hover {
+  background-color: #2980b9;
+}
+
+/* LINK STYLE */
+.second_DIV_NEWACC {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.second_DIV_NEWACC a {
+  text-decoration: none;
+  color: #3498db;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.second_DIV_NEWACC a:hover {
+  text-decoration: underline;
+}
+
+/* ERROR/SUCCESS MESSAGES */
+.header_error, .header_alert {
+  color: red;
+  font-size: 14px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.header_alert {
+  color: green;
+}

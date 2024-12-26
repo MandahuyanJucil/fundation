@@ -1,0 +1,283 @@
+
+
+
+
+
+
+
+
+ :root {
+  --ff: "Oswald", sans-serif;
+  --league: "League Spartan", sans-serif;
+
+  --cc: #A294F9;
+  --wht: #082803;
+  --btn: #F0E472;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: var(--league);
+}
+
+a {
+  text-decoration: none;
+  color: var(--btn);
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--cc);
+  font-family: var(--ff);
+  justify-content: space-between;
+}
+
+.first_div {
+  height: 20%;
+  width: 29%;
+}
+
+.main_img_first_div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+.second_div {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5%;
+  justify-content: space-between;
+  align-items: center;
+  height: 25%;
+}
+
+.second_div_logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 25%;
+  width: 100%;
+  background-color: var(--cc);
+}
+
+.Logo {
+  height: 30%;
+  width: 20%;
+}
+
+.second_div_logo h3 {
+  font-size: 300%;
+  font-weight: 400;
+  color: var(--wht);
+}
+
+form {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cc);
+}
+
+.password-container {
+  position: relative;
+  width: 50%;
+  background-color: var(--cc);
+  margin-left: -20%;
+}
+
+.password-input {
+  width: 130%;
+  height: 15%;
+  padding: 9%;
+  font-size: 200%;
+  border: 4px solid var(--wht);
+  border-radius: 10px;
+  background-color: var(--cc);
+}
+
+.password-input::placeholder {
+  color: var(--wht);
+}
+
+.eye-icon {
+  position: absolute;
+  right: -40%;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-image: url('http://localhost/dashboard/fundation/public/img/eye.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.password-container a {
+  font-size: 150%;
+  margin-left: 5%;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: var(--wht);
+}
+
+.seoncd_div_btn {
+  display: flex;
+  height: 20%;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--cc);
+}
+
+.seoncd_div_btn button {
+  width: 35%;
+  background-color: var(--wht);
+  border: none;
+  border-radius: 10px;
+
+  font-weight: 600;
+  font-size: 150%;
+  color: var(--cc);
+  cursor: pointer;
+}
+
+.second_DIV_NEWACC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 10%;
+  background-color: var(--cc);
+}
+
+.second_DIV_NEWACC a {
+  font-size: 170%;
+  color: var(--wht);
+}
+
+.header_alert,
+.header_error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 120%;
+  color: var(--wht);
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 1268px) {
+  #main {
+      flex-direction: column;
+  }
+
+  .first_div {
+      width: 100%;
+      height: auto;
+  }
+
+  .main_img_first_div {
+      width: 100%;
+  }
+
+  .second_div {
+      margin-right: 0;
+      height: auto;
+  }
+
+  .second_div_logo h3 {
+      font-size: 200%;
+  }
+
+  .password-container {
+      width: 70%;
+      margin-left: 0;
+  }
+
+  .password-input {
+      width: 100%;
+      font-size: 150%;
+  }
+
+  .eye-icon {
+      right: 10%;
+  }
+
+  .seoncd_div_btn button {
+      width: 50%;
+      font-size: 120%;
+  }
+
+   .seoncd_div_btn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  .seoncd_div_btn button {
+    margin-top: 2%;
+      width: 70%;
+      font-size: 100%;
+  }
+
+  .second_DIV_NEWACC a {
+      font-size: 150%;
+  }
+  .first_div {
+    display: none;
+    height: 20%;
+    width: 29%;
+  }
+}
+
+@media (max-width: 480px) {
+  .second_div_logo h3 {
+      font-size: 180%;
+  }
+
+  .password-container {
+      width: 70%;
+  }
+
+  .password-input {
+      font-size: 120%;
+  }
+
+  .seoncd_div_btn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  .seoncd_div_btn button {
+    margin-top: 2%;
+      width: 70%;
+      font-size: 100%;
+  }
+   
+  form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .first_div {
+    display: none;
+    height: 20%;
+    width: 29%;
+  }
+
+
+}

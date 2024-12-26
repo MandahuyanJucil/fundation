@@ -1,0 +1,185 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*foont family*/
+    --ff:"Oswald", sans-serif;
+    --league:"League Spartan", sans-serif;
+    
+    
+    /*color*/
+    --cc:#082803;
+    --btn:#F0E472;
+    --wht:#ffff;
+    --board:#385C32CC;
+    --mid:#68783E;
+    --bg:rgb(45, 74, 40);
+    }
+
+body{
+    background-color: var(--bg);
+    font-family: var(--league);
+}
+
+#header{
+    background-color: var(--cc);
+}
+
+#main{
+    background-color: var(--mid);
+    margin-top: -1.3%;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--board);
+}
+
+a{
+    text-decoration: none;
+    color: var(--wht);
+}
+
+
+.header_mainbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    background-color:var(--cc);
+    padding: 2%;
+}
+
+.header_picture{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;   
+    background-color: var(--cc);   
+}
+
+
+
+.header_logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;  
+    margin-left: 1%;
+    background-color: var(--cc);
+    height: 15%;
+    width: 15%;
+    margin-top: -3%;
+}
+
+.header_navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items:flex-end ;
+    height: 100%;
+    width: 100%;
+    background-color: var(--cc);
+    font-size: 180%;    
+}
+
+.header_login{
+    background-color: red;
+}
+
+.header_btn_log{
+    display: block;
+    background-color: #F0E472;
+   height: 100%;
+}
+
+.login {
+    text-align: right;
+    width: 20%;
+    margin-right: -3%;
+}
+
+.login-button {
+    background-color: #f5e469;
+    padding: 30px 35px 57px ;
+    color: #112a0c;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.login-button:hover {
+    background-color: #e0c958;
+}
+
+.main_firstdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--mid);
+    margin-top: 5%;
+}
+
+.main_firsdiv_h1{
+font-size: 600%;
+color: var(--wht);  
+}
+
+.main_firstdiv_h5{
+    font-size: 400%;
+    margin-top: -4%;
+    color: var(--wht);
+}
+
+.main_firstdiv_p{
+    font-size: 300%;
+    background-color: var(--cc);
+    padding: 1.5%;
+    border-radius: 20px;
+    margin-top: -4%;
+    color: var(--btn);
+}
+.horizontal-line {
+    margin-bottom: 3%;
+    height: 3px;
+    background-color: var(--wht);
+    width: 60%;
+  }
+
+  .footer_vision{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.footer_mission{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer_h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--btn) ;
+    font-weight: 200;
+    font-size: 200%;
+    padding: 3%;
+    border-radius: 13px;
+    width: 50%;
+}
+
+.footer_p{
+    margin-top: -2%;
+    text-align: center;
+    color: var(--wht);
+    font-size: 170%;
+}

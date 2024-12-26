@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #0066cc;
+}
+
+h2 {
+    color: #004d99;
+    margin-top: 30px;
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.timeline {
+    margin: 30px 0;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 3px solid #0066cc;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #0066cc;
+}
+
+.timeline-item p {
+    margin: 10px 0 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0066cc;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ADD RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    .timeline-item {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .timeline-item h3 {
+        font-size: 1em;
+    }
+
+    .timeline-item {
+        padding: 8px;
+    }
+
+    footer {
+        font-size: 0.8em;
+        padding: 8px 0;
+    }
+}

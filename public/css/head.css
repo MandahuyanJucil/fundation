@@ -1,0 +1,57 @@
+   .navbar {
+        position: relative;
+    }
+
+    .logo img {
+        width: 100px;
+        height: auto;
+    }
+
+    .dropdown-content {
+        position: fixed;
+        top: 0;
+        right: -300px; /* Initially hidden off the right */
+        width: 300px;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+        overflow-y: auto;
+        transition: right 0.3s ease; /* Smooth slide animation */
+        z-index: 1000; /* Ensure it's on top of other elements */
+    }
+
+    .dropdown-content.active {
+        right: 0; /* Slide in from the right */
+    }
+
+    .menu-item {
+        padding: 15px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .menu-item h3 {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .logout h3 {
+        color: red;
+    }
+
+    .dropdown-toggle {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .dropdown-toggle:hover {
+        background-color: #0056b3;
+    }
+        .logo img {
+        width: 100px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+    }   
