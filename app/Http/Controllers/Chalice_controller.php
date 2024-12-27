@@ -53,13 +53,30 @@ class Chalice_controller extends Controller
      }
     
    
-     function print($id){ 
+    /*  function print($id){ 
         $data=Chalice::find($id);
          $pdf = Pdf::loadView('/print',compact('data'));
         return $pdf->download('print.pdf');
-     }
+     } */
 
-  
+     function print($id)
+     {
+         $data = Chalice::find($id);
+     
+         // Validate if the image file exists
+         $imagePath = storage_path('app/public/' . $data->image);
+         if (!file_exists($imagePath)) {
+             return response()->json(['error' => 'Image not found.'], 404);
+         }
+     
+         // Pass the image as a base64 string for reliable embedding
+         $data->base64Image = base64_encode(file_get_contents($imagePath));
+     
+         $pdf = Pdf::loadView('/print', compact('data'));
+     
+         return $pdf->download('print.pdf');
+     }
+     
 
 
      function chalice_edit(Request $request){

@@ -61,6 +61,12 @@ class mayaonetime_controller extends Controller
         $maya->paid_by6= request('paid_by6');
         $maya->remarks6= request('remarks6');
         $maya->summary= request('summary');
+        $maya->diagnosis= request('diagnosis');
+        $maya->summary2= request('summary2');
+        $maya->summary3= request('summary3');
+        $maya->summary4= request('summary4');
+        $maya->summary5= request('summary5');
+        $maya->summary6= request('summary6');
         
               
         if(!empty($req->image)){
@@ -211,6 +217,38 @@ function summary_view_data(Request $req, $id) {
         $data->post_op_Notes= $req->post_op_Notes;
         $data->additional_notes= $req->additional_notes;
         $data->Admin_notes= $req->Admin_notes;
+        $data->diagnosis= $req->diagnosis;
+        $data->description= $req->description;
+        $data->amount= $req->amount;
+        $data->paid_by= $req->paid_by;
+        $data->remarks= $req->remarks;
+        $data->description2= $req->description2;
+        $data->amount2= $req->amount2;
+        $data->paid_by2= $req->paid_by2;
+        $data->remarks2= $req->remarks2;
+        $data->description3= $req->description3;
+        $data->amount3= $req->amount3;
+        $data->paid_by3= $req->paid_by3;
+        $data->remarks3= $req->remarks3;
+        $data->description4= $req->description4;
+        $data->amount4= $req->amount4;
+        $data->paid_by4= $req->paid_by4;
+        $data->remarks4= $req->remarks4;
+        $data->description5= $req->description5;
+        $data->amount5= $req->amount5;
+        $data->paid_by5= $req->paid_by5;
+        $data->remarks5= $req->remarks5;
+        $data->description6= $req->description6;
+        $data->amount6= $req->amount6;
+        $data->paid_by6= $req->paid_by6;
+        $data->remarks6= $req->remarks6;
+        $data->summary= $req->summary;
+        $data->diagnosis= $req->diagnosis;
+        $data->summary2= $req->summary2;
+        $data->summary3= $req->summary3;
+        $data->summary4= $req->summary4;
+        $data->summary5= $req->summary5;
+        $data->summary6= $req->summary6;
  
     /* $req->validate([
         'image'=>'required|mimes:jpg,png,pdf|max:2048'
@@ -236,10 +274,31 @@ function delete($id){
  }
 
 
- function print($id){ 
+/*  function print($id){ 
     $data=Mayashope_onetime::find($id);
      $pdf = Pdf::loadView('/mayashope_onrtime_record_print',compact('data'));
     return $pdf->download('print.pdf');
  }
+ */
+
+ 
+ function print($id)
+ {
+     $data = Mayashope_onetime::find($id);
+ 
+     // Validate if the image file exists
+     $imagePath = storage_path('app/public/'.$data->image);
+     if (!file_exists($imagePath)) {
+         return response()->json(['error' => 'Image not found.'], 404);
+     }
+ 
+     // Pass the image as a base64 string for reliable embedding
+     $data->base64Image = base64_encode(file_get_contents($imagePath));
+ 
+     $pdf = Pdf::loadView('/mayashope_onrtime_record_print', compact('data'));
+ 
+     return $pdf->download('print.pdf');
+ }
+ 
 
 }

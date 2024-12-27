@@ -81,6 +81,11 @@
                         <label for="anesthesislologist">Anesthesislologist</label>
                         <input type="text" id="anesthesislologist" name="anesthesislologist" required>
                         <br>
+
+                        <label for="diagnosis">Diagnosis</label>
+                        <input type="text" id="diagnosis" name="diagnosis" required>
+                        <br>
+
                         <label for="surgeon">Surgeon</label>
                         <input type="text" id="surgeon" name="surgeon" required>
                         <br>
@@ -100,6 +105,7 @@
                            <label for="image">Image</label>
                         <input type="file" id="image" name="image" required>   
                            <br>
+                           
 
            
                 <!-- Additional Fields Section -->
@@ -134,12 +140,20 @@
 <script>
     let counter = 2; // Start counter from 2 for additional fields
 
-    
-    document.getElementById('add-button').addEventListener('click', function () {
+    const addButton = document.getElementById('add-button');
+    addButton.addEventListener('click', function () {
+        if (counter > 6) {
+            // Stop adding more fields if counter exceeds 6
+            alert('You can only add up to 6 fields.');
+            return;
+        }
+
         const container = document.getElementById('additional-fields-container');
 
         const additionalFieldsHTML = `
-           
+            <label for="summary${counter}">Summary ${counter}</label>
+            <input type="date" id="summary${counter}" name="summary${counter}" required>
+            <br>
             <label for="description${counter}">Description ${counter}</label>
             <input type="text" id="description${counter}" name="description${counter}" required>
             <br>
@@ -161,5 +175,6 @@
         counter++; // Increment counter for next set of fields
     });
 </script>
+
 
 </html>

@@ -72,10 +72,19 @@
                         <label for="additional_notes">Additional notes</label>
                         <input type="text" id="additional_notes" name="additional_notes" value="{{$maya['additional_notes']}}" >
                            <br>
+
+                           <label for="diagnosis">Diagnosis</label>
+                        <input type="text" id="diagnosis" name="diagnosis" value="{{$maya['diagnosis']}}" >
+                           <br>
                            
                         <label for="Admin_notes">Admin notes</label>
                         <input type="text" id="Admin_notes" name="Admin_notes" value="{{$maya['Admin_notes']}}" >   
                            <br>
+
+                           <label for="image">Image</label>
+                        <input type="file" id="image" name="image" value="{{$maya['image']}}" >
+                           <br>
+
                            <label for="summary">Summary</label>
                     <input type="date" id="summary" name="summary"  value="{{$maya['summary']}}"  >
                     <br>

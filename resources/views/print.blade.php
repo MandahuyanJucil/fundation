@@ -26,6 +26,9 @@
         .table-container {
             overflow-x: auto;
         }
+        img{
+            width: 15%;
+        }
 
         /* Responsive Styling */
         @media (max-width: 768px) {
@@ -45,6 +48,7 @@
 </head>
 <body>
     <div class="table-container">
+    <img src="data:image/jpeg;base64,{{ $data->base64Image }}" alt="Image">
         <table>
             <thead> 
                 <h2>Personal Information</h2>
@@ -175,8 +179,12 @@
                     <td>{{$data->Current_Condition_of_the_Child}}</td>
                     <td>{{$data->Additional_Notes}}</td>
                     <td>{{$data->Prepared_by}}</td>
+                    
             </tbody>
         </table>
+     
     </div>
+ 
+
 </body>
 </html>
