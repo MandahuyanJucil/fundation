@@ -175,6 +175,82 @@ footer a:hover {
         opacity: 1;
     }
 }
+/* General Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .search-form {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .search-input {
+        width: 60%;
+        font-size: 14px;
+    }
+
+    .search-button {
+        width: 40%;
+        font-size: 14px;
+    }
+
+    .create-new {
+        justify-content: center;
+    }
+
+    .content-layout {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .table-container, .chart-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 14px;
+        display: block;
+        overflow-x: auto; /* Enable horizontal scrolling for wide tables */
+        white-space: nowrap; /* Prevent wrapping */
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+
+    .actions img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* For Very Small Screens (Phones, max-width: 480px) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .search-input, .search-button {
+        font-size: 12px;
+    }
+
+    table th, table td {
+        padding: 5px;
+    }
+}
 
 
     </style>

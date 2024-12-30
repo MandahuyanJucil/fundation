@@ -144,58 +144,71 @@
     <footer id="footer">
         <div class="footer_container">
         <table>
-                <tr>
-                    <th>Summary</th>
-                    <th>Description</th>
-                    <th>Amount</th>
-                    <th>Paid by</th>
-                    <th>Remarks</th>
-                </tr>
-                <tr>
-                    <td>{{$data->summary}}</td>
-                    <td>{{$data->description}}</td>
-                    <td>{{$data->amount}}</td>
-                    <td>{{$data->paid_by}}</td>
-                    <td>{{$data->remarks}}</td>
-                </tr>
-                <tr>
-                    
-                    <td>{{$data->summary2}}</td>
-                    <td>{{$data->description2}}</td>
-                    <td>{{$data->amount2}}</td>
-                    <td>{{$data->paid_by2}}</td>
-                    <td>{{$data->remarks2}}</td>
-                </tr>
-                <tr>
-                <td>{{$data->summary3}}</td>
-                    <td>{{$data->description3}}</td>
-                    <td>{{$data->amount3}}</td>
-                    <td>{{$data->paid_by3}}</td>
-                    <td>{{$data->remarks3}}</td>
-                </tr>
-                <tr>
-                <td>{{$data->summary4}}</td>
-                    <td>{{$data->description4}}</td>
-                    <td>{{$data->amount4}}</td>
-                    <td>{{$data->paid_by4}}</td>
-                    <td>{{$data->remarks4}}</td>
-                </tr>
-                <tr>
-                <td>{{$data->summary5}}</td>
-                    <td>{{$data->description5}}</td>
-                    <td>{{$data->amount5}}</td>
-                    <td>{{$data->paid_by5}}</td>
-                    <td>{{$data->remarks5}}</td>
-                </tr>
-                <tr>
-                <td>{{$data->summary6}}</td>
-                    <td>{{$data->description6}}</td>
-                    <td>{{$data->amount6}}</td>
-                    <td>{{$data->paid_by6}}</td>
-                    <td>{{$data->remarks6}}</td>
-                </tr>
-               
-            </table>
+    <tr>
+        <th>Summary</th>
+        <th>Description</th>
+        <th>Amount</th>
+        <th>Paid by</th>
+        <th>Remarks</th>
+    </tr>
+    <tr>
+        <td>{{$data->summary}}</td>
+        <td>{{$data->description}}</td>
+        <td>{{$data->amount}}</td>
+        <td>{{$data->paid_by}}</td>
+        <td>{{$data->remarks}}</td>
+    </tr>
+    <tr>
+        <td>{{$data->summary2}}</td>
+        <td>{{$data->description2}}</td>
+        <td>{{$data->amount2}}</td>
+        <td>{{$data->paid_by2}}</td>
+        <td>{{$data->remarks2}}</td>
+    </tr>
+    <tr>
+        <td>{{$data->summary3}}</td>
+        <td>{{$data->description3}}</td>
+        <td>{{$data->amount3}}</td>
+        <td>{{$data->paid_by3}}</td>
+        <td>{{$data->remarks3}}</td>
+    </tr>
+    <tr>
+        <td>{{$data->summary4}}</td>
+        <td>{{$data->description4}}</td>
+        <td>{{$data->amount4}}</td>
+        <td>{{$data->paid_by4}}</td>
+        <td>{{$data->remarks4}}</td>
+    </tr>
+    <tr>
+        <td>{{$data->summary5}}</td>
+        <td>{{$data->description5}}</td>
+        <td>{{$data->amount5}}</td>
+        <td>{{$data->paid_by5}}</td>
+        <td>{{$data->remarks5}}</td>
+    </tr>
+    <tr>
+        <td>{{$data->summary6}}</td>
+        <td>{{$data->description6}}</td>
+        <td>{{$data->amount6}}</td>
+        <td>{{$data->paid_by6}}</td>
+        <td>{{$data->remarks6}}</td>
+    </tr>
+    <!-- <tr>
+        <td colspan="2"><strong>Total</strong></td>
+        <td>
+            {{ 
+                $data->amount +
+                $data->amount2 +
+                $data->amount3 +
+                $data->amount4 +
+                $data->amount5 +
+                $data->amount6
+            }}
+        </td>
+        <td colspan="2"></td>
+    </tr> -->
+</table>
+
         </div>
     </footer>
 </body>

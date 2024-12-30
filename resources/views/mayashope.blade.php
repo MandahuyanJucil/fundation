@@ -153,6 +153,85 @@ span {
     }
 }
 
+/* Responsive Styles for Tablets and Phones */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .search-form {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .search-input {
+        width: 60%;
+        font-size: 14px;
+    }
+
+    .search-button {
+        width: 40%;
+        font-size: 14px;
+    }
+
+    .content-layout {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .table-container, .chart-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 14px;
+        display: block;
+        overflow-x: auto; /* Enable horizontal scrolling for wide tables */
+        white-space: nowrap; /* Prevent wrapping */
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+
+    .actions img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Extra Small Screens (Phones, max-width: 480px) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .search-input, .search-button {
+        font-size: 12px;
+    }
+
+    table th, table td {
+        padding: 5px;
+    }
+
+    .actions img {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+
     </style>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>

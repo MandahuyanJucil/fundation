@@ -186,6 +186,127 @@ footer a:hover {
     }
 }
 
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    header, footer {
+        padding: 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .search-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .search-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .create-new {
+        font-size: 14px;
+        justify-content: center;
+    }
+
+    .content-layout {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .table-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .actions img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* For Phone Screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    header, footer {
+        padding: 8px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .search-form {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .search-input, .search-button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .create-new {
+        font-size: 12px;
+        gap: 8px;
+    }
+
+    .content-layout {
+        gap: 10px;
+    }
+
+    .table-container {
+        padding: 5px;
+    }
+
+    table {
+        font-size:65%;
+        display: block;
+        overflow-x: auto; /* Make table scrollable */
+        white-space: wrap; /* Prevent wrapping */
+    }
+
+    th, td {
+        padding: 5px;
+    }
+
+    .actions img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
     </style>
 </head>
 <body>

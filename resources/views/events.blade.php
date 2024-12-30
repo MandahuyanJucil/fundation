@@ -177,6 +177,84 @@ span{
     }
 }
 
+/* Mobile Responsiveness */
+@media screen and (max-width: 1237px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .search-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content-layout {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .table-container, .graph-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 14px;
+        display: block;
+        overflow-x: auto; /* Scrollable tables */
+        white-space: nowrap; /* Prevent table content wrapping */
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+}
+
+/* For Phone Screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .search-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .content-layout {
+        gap: 10px;
+    }
+
+    table {
+        font-size: 100%;
+    }
+
+    table th, table td {
+        padding: 5px;
+    }
+
+    .actions img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+
     </style>
 </head>
 <body>

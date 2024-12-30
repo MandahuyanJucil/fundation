@@ -10,7 +10,7 @@
   --ff: "Oswald", sans-serif;
   --league: "League Spartan", sans-serif;
 
-  --cc: #A294F9;
+  --cc: #cbc4f4;
   --wht: #082803;
   --btn: #F0E472;
 }
@@ -20,6 +20,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-size: var(--league);
+  background-color: var(--cc);
 }
 
 a {

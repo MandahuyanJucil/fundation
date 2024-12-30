@@ -130,92 +130,110 @@
 }
 
 
-    /* Mobile Responsiveness */
-    @media screen and (max-width: 768px) {
-        body {
-            font-size: 4%;
-        }
-
-        header {
-            padding: 4%;
-        }
-
-        .main_second_div {
-            padding: 3%;
-        }
-
-        .main_second_div_top h2 {
-            font-size: 4.5%;
-        }
-
-        table {
-            font-size: 3.5%;
-        }
-
-        th, td {
-            padding: 3%;
-        }
-
-        .actions {
-            flex-direction: column;
-            gap: 2%;
-        }
-
-        footer {
-            padding: 3%;
-        }
+ /* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Use relative font size */
     }
 
-    /* For phone screens */
-    @media screen and (max-width: 480px) {
-        body {
-            font-size: 3.5%;
-        }
-
-        header {
-            padding: 5%;
-        }
-
-        .main_second_div {
-            padding: 3%;
-        }
-
-        .main_second_div_top h2 {
-            font-size: 5%;
-        }
-
-        table {
-            font-size: 3%;
-        }
-
-        th, td {
-            padding: 2%;
-        }
-
-        h3 {
-            font-size: 3.5%;
-        }
-
-        .actions a {
-            font-size: 3%;
-            padding: 2% 4%;
-        }
-
-        footer {
-            padding: 3%;
-        }
-
-        /* Make tables scrollable */
-        table {
-            display: block;
-            overflow-x: auto;
-            white-space: nowrap;
-        }
-
-        .record-section {
-            padding: 3%;
-        }
+    header {
+        padding: 10px;
     }
+
+    .main_second_div {
+        padding: 10px;
+    }
+
+    .main_second_div_top h2 {
+        font-size: 18px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    /* Stack charts vertically */
+    #charts-container {
+        flex-direction: column;
+    }
+}
+
+/* For phone screens */
+@media screen and (max-width: 1274px) {
+    body {
+        font-size: 12px;
+    }
+
+    header {
+        padding: 8px;
+    }
+
+    .main_second_div {
+        padding: 8px;
+    }
+
+    .main_second_div_top h2 {
+        font-size: 16px;
+    }
+
+    table {
+        font-size: 10px;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .actions a {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    footer {
+        padding: 8px;
+    }
+
+    /* Make tables scrollable */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .record-section {
+        padding: 8px;
+    }
+
+    /* Charts stacking on top of each other */
+    #charts-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #recordsChart,
+    #createdUpdatedChart {
+        width: 60%;
+        height: auto;
+    }
+}
+
     </style>
 </head>
 <body>
