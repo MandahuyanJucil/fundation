@@ -54,10 +54,10 @@
                         <label for="fname">NAME:</label>
                         <input hidden type="number" id="id" name="id" value="{{$chalice['id']}}" required>
                         <input type="text" id="fname" name="fname" value="{{$chalice['fname']}}" required>
-                               
+                        <br>       
                         <label for="status">STATUS:</label>
                         <input type="text" id="status" name="status" value="{{$chalice['status']}}" required>
-
+                        <br>
                         <label for="image">Image:</label>
                         <input type="file" id="image" name="image" value="{{$chalice['image']}}">
                <br>
@@ -69,10 +69,10 @@
                         <br>
                         <label for="birthdate">BIRTH DATE:</label>
                         <input type="text" id="birthdate" name="birthdate" value="{{$chalice['birthdate']}}" required>
-
+                        <br>
                         <label for="age">AGE:</label>
                         <input type="text" id="age" name="age" value="{{$chalice['age']}}" required>
-
+                        <br>
                         <label for="gender">GENDER:</label>
                         <input type="text" id="gender" name="gender" value="{{$chalice['gender']}}" required>
                         

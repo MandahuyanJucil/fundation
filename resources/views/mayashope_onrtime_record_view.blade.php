@@ -6,70 +6,119 @@
     <link rel="stylesheet" href="http://localhost/dashboard/fundation/public/css/Mayaform.css">
     <title>Maya's Hope Surgery Record</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        .main_second_div_top {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .main_second_div_top img {
-            width: 30px;
-            height: 30px;
-        }
-        h2 {
-            margin: 0;
-        }
-        main{
-            display:flex;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
 
-            justify-content: space-between;
-            align-items: center;
-        }
-  
-       img{
-        height:30%;
-        width: 20%;
-    
+/* Header and Main Section */
+.main_second_div_top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main_second_div_top img {
+    width: 30px;
+    height: 30px;
+}
+
+h2 {
+    margin: 0;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Footer Section */
+.footer_container {
+    margin-top: 30px;
+}
+
+/* Input Fields */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
     }
-       
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        .table {
-            width: 300%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-        .footer_container {
-            margin-top: 30px;
-        }
-        label {
-            font-weight: bold;
-            display: block;
-            margin-top: 10px;
-        }
-        input {
-            width: 100%;
-            padding: 8px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
+
+    .main_second_div_top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    .footer_container table {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 4px;
+    }
+
+    .main_second_div_top img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
     </style>
 </head>
 <body>
