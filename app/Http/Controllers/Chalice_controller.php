@@ -12,6 +12,18 @@ class Chalice_controller extends Controller
 {
 
     function search_chalice(Request $request){
+        if (Auth::check()) {
+            $user = Auth::user();
+    
+            // CHECK IF THE USER IS STAFF
+            if (in_array($user->account_type, ['staff'])) {
+               
+                return redirect()->route('mayaform');
+            }
+        } else {
+       
+            return redirect()->route('login');
+        }
         $cild_data=Chalice::where('fname','like',"%$request->search%")->get();
         return view('chalice',['chalice'=>$cild_data]);;
     }
@@ -30,7 +42,7 @@ class Chalice_controller extends Controller
             }
         } else {
        
-            return redirect()->route('chalice');
+            return redirect()->route('login');
         }
        $data=Chalice::all();
         return view('chalice',['chalice'=>$data]);

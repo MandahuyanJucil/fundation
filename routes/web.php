@@ -15,9 +15,9 @@ Route::get('/', function () {
 });
 
 
-Route::get('/dashboard', function () {
+/* Route::get('/dashboard', function () {
     return view('dashboard');
-});
+}); */
 
 
 
@@ -47,15 +47,15 @@ Route::get('/mayaform', function () {
 Route::get('/ourstory', function () {
     return view('ourstory');
 });
-Route::get('/print', function () {
+/* Route::get('/print', function () {
     return view('print');
-});
-Route::get('/maya_print', function () {
+}); */
+/* Route::get('/maya_print', function () {
     return view('maya_print');
-});
-Route::get('/account_print', function () {
+}); */
+/* Route::get('/account_print', function () {
     return view('account_print');
-});
+}); */
 Route::get('/mayashope_onetime', function () {
     return view('mayashope_onetime');
 });
@@ -63,6 +63,13 @@ Route::get('/mayashope_onetime', function () {
 Route::get('/FAQ', function () {
     return view('FAQ');
 });
+
+Route::get('/print',[mayaonetime_controller::class,'mayashope_onetime']);
+Route::get('/account_print',[mayaonetime_controller::class,'mayashope_onetime']);
+/* Route::get('/mayashope_onetime',[mayaonetime_controller::class,'mayashope_onetime_show']); */
+Route::get('/maya_print',[mayaonetime_controller::class,'mayashope_onetime']);
+/* Route::get('/add_events',[mayaonetime_controller::class,'mayashope_onetime']); */
+
 
 
 Route::get('/search_mayaonetime',[mayaonetime_controller::class,'search_mayaonetime']);

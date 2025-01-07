@@ -15,6 +15,18 @@ class Mayashope_controller extends Controller
 
 
     function search(Request $request){
+        if (Auth::check()) {
+            $user = Auth::user();
+    
+            // CHECK IF THE USER IS STAFF
+            if (in_array($user->account_type, ['staff'])) {
+               
+                return redirect()->route('mayaform');
+            }
+        } else {
+       
+            return redirect()->route('login');
+        }
         $cild_data=Mayashope::where('nameofchild','like',"%$request->search%")->get();
         return view('mayashope',['mayashope'=>$cild_data]);
     }
@@ -35,7 +47,7 @@ class Mayashope_controller extends Controller
             }
         } else {
        
-            return redirect()->route('mayashope');
+            return redirect()->route('login');
         }
         $data=Mayashope::all();
          return view('mayashope',['mayashope'=>$data]);

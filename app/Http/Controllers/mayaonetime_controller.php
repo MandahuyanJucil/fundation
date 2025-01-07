@@ -14,6 +14,49 @@ use Barryvdh\DomPDF\Facade\Pdf;
 
 class mayaonetime_controller extends Controller
 {
+
+
+    function  mayashope_onetime(){
+        if (Auth::check()) {
+            $user = Auth::user();
+    
+            // CHECK IF THE USER IS STAFF
+            if (in_array($user->account_type, ['staff'])) {
+               
+                return redirect()->route('mayaform');
+            }
+        } else {
+       
+            return redirect()->route('login');
+        }
+   
+}
+
+/* function mayashope_onetime_show(){
+    if (Auth::check()) {
+        $user = Auth::user();
+    
+        // Redirect based on account type
+        switch ($user->account_type) {
+            case 'staff':
+                return redirect()->route('mayaform');
+            case 'admin':
+                return redirect()->route('mayashope_onetime');
+            default:
+                // Handle unexpected account types
+                return redirect()->route('home'); // Replace 'home' with a suitable fallback route
+        }
+    } else {
+        // Redirect unauthenticated users
+        return redirect()->route('login');
+    }
+    
+
+}
+ */
+
+
+
     function mayaupload(Request $req){
         $maya= new Mayashope_onetime();
         $maya->guardian= request('guardian');
@@ -83,19 +126,21 @@ class mayaonetime_controller extends Controller
 
 
  public function dasboard_show()
- {
+ {  if (Auth::check()) {
+            $user = Auth::user();
+    
+            // CHECK IF THE USER IS STAFF
+            if (in_array($user->account_type, ['staff'])) {
+               
+                return redirect()->route('mayaform');
+            }
+        } else {
+       
+            return redirect()->route('login');
+        }
 
     
-     if (Auth::check()) {
-         $user = Auth::user();
- 
-         // CHECK IF THE USER IS STAFF
-         if (in_array($user->account_type, ['staff'])) {
-             return redirect()->route('mayaform');
-         }
-     } else {
-         return redirect()->route('admin_dasboard');
-     }
+     
  
      // RETRIEVE DATA FOR THE VIEW
      $mayashopeData = Mayashope_onetime::all();
@@ -140,11 +185,35 @@ class mayaonetime_controller extends Controller
 
 
  function search_mayaonetime(Request $request){
+    if (Auth::check()) {
+        $user = Auth::user();
+
+        // CHECK IF THE USER IS STAFF
+        if (in_array($user->account_type, ['staff'])) {
+           
+            return redirect()->route('mayaform');
+        }
+    } else {
+   
+        return redirect()->route('login');
+    }
     $cild_data=Mayashope_onetime::where('child_name','like',"%$request->search%")->get();
     return view('mayashope_onrtime_record',['mayashope_onrtime_record'=>$cild_data]);
 }
 
 function  view($id){
+    if (Auth::check()) {
+        $user = Auth::user();
+
+        // CHECK IF THE USER IS STAFF
+        if (in_array($user->account_type, ['staff'])) {
+           
+            return redirect()->route('mayaform');
+        }
+    } else {
+   
+        return redirect()->route('login');
+    }
         $data=Mayashope_onetime::find($id);
          return view('mayashope_onrtime_record_view',['maya'=>$data]);
      }
@@ -162,7 +231,7 @@ function  view($id){
         }
     } else {
    
-        return redirect()->route('Mayashope_onetime');
+        return redirect()->route('login');
     }
 
    $data=Mayashope_onetime::all();

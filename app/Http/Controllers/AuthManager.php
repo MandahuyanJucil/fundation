@@ -110,6 +110,7 @@ class AuthManager extends Controller
         }
         return view('events');
     }
+    
 
     function sign_in(){ 
         if (Auth::check()) {

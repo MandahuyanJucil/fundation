@@ -51,10 +51,25 @@ class Events_controller extends Controller
  }
 
     function event_search(Request $request){
+        if (Auth::check()) {
+            $user = Auth::user();
+    
+            // CHECK IF THE USER IS STAFF
+            if (in_array($user->account_type, ['staff'])) {
+               
+                return redirect()->route('mayaform');
+            }
+        } else {
+       
+            return redirect()->route('login');
+        }
         $cild_data=Event::where('event','like',"%$request->search%")->get();
         return view('events',['event'=>$cild_data]);
     }
             
+
+
+   
 
     function show(){
        
@@ -68,7 +83,7 @@ class Events_controller extends Controller
             }
         } else {
        
-            return redirect()->route('events');
+            return redirect()->route('login');
         }
 
       
