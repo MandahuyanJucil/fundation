@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://localhost/dashboard/fundation/public/css/mayaform.css">
+    <link rel="stylesheet" href="/css/mayaform.css">
     <title>Account Information</title>
     <style>
         .hidden {
@@ -19,8 +19,8 @@
     <main id="main">
         <div class="main_second_div">
             <div class="main_second_div_top">
-                <a href="http://localhost/dashboard/fundation/public/mayashope">
-                    <img src="http://localhost/dashboard/fundation/public/img/arrow.png" alt="arrow">
+                <a href="/mayashope">
+                    <img src="/img/arrow.png" alt="arrow">
                 </a>
                 <h2>Chalice Form</h2>
             </div>
@@ -29,7 +29,7 @@
 
     <footer id="footer">
         <div class="footer_container">
-            <form id="questionnaireForm" action="http://localhost/dashboard/fundation/public/mayaform" method="POST" enctype="multipart/form-data">
+            <form id="questionnaireForm" action="/mayaform" method="POST" enctype="multipart/form-data">
                 @csrf 
 
                 <!-- Page 1 -->

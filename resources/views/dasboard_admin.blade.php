@@ -88,10 +88,10 @@ footer {
         <p>INSPIRING CHANGE, BUILDING WITH HOPE.</p>
     </header>
     <main>
-        <a href="http://localhost/dashboard/fundation/public/mayashope" class="button">Chalice</a>
-        <a href="http://localhost/dashboard/fundation/public/chalice" class="button">Mayashope</a>
-        <a href="http://localhost/dashboard/fundation/public/events" class="button">Events</a>
-        <a href="http://localhost/dashboard/fundation/public/mayaform" class="button">Evaluation Form</a>
+        <a href="/mayashope" class="button">Chalice</a>
+        <a href="/chalice" class="button">Mayashope</a>
+        <a href="/events" class="button">Events</a>
+        <a href="/mayaform" class="button">Evaluation Form</a>
     </main>
     
 </body>

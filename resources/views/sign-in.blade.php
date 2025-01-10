@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://localhost/dashboard/fundation/public/css/login.css">
+    <link rel="stylesheet" href="/css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -24,18 +24,18 @@
 
         <main id="main">
             <div class="first_div">
-                <img src="http://localhost/dashboard/fundation/public/img/image1.png" alt="" class="main_img_first_div">
+                <img src="/img/image1.png" alt="" class="main_img_first_div">
             </div>
          
             <div class="main_line">
-                <img src="http://localhost/dashboard/fundation/public/img/line.png" alt="Line" class="main_img_line">
+                <img src="/img/line.png" alt="Line" class="main_img_line">
             </div>
 
 
             <div class="second_div">
             
              <div class="second_div_logo">
-                    <img src="http://localhost/dashboard/fundation/public/img/logo.png" alt="logo" class="Logo">
+                    <img src="/img/logo.png" alt="logo" class="Logo">
                     <h3>SIGN IN</h3>
              </div>
                   
@@ -80,7 +80,7 @@
                         <div class="main_overley_autobox_footer">
                               <input type="text"  placeholder="Enter Code" >
                               <div class="horizontal-line"></div>
-                              <a href="http://localhost/dashboard/fundation/public/admin_dasboard">CONTINUE</a>
+                              <a href="/admin_dasboard">CONTINUE</a>
                         </div>
                     </div>
                 </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://localhost/dashboard/fundation/public/css/Mayaform.css">
+    <link rel="stylesheet" href="/css/Mayaform.css">
     <title>accountInformation</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
 
             <div class="main_second_div">
             <div class="main_second_div_top">
-                <a href="http://localhost/dashboard/fundation/public/mayashope"><img src="http://localhost/dashboard/fundation/public/img/arrow.png" alt="arrow"></a>
+                <a href="/mayashope"><img src="/img/arrow.png" alt="arrow"></a>
                 <h2>Chalice form Edit</h2>
             </div>
 
@@ -33,7 +33,7 @@
 
               <div class="footer_2">
 
-              <form action="http://localhost/dashboard/fundation/public/mayashope_editpost" method="POST"  enctype="multipart/form-data">
+              <form action="/mayashope_editpost" method="POST"  enctype="multipart/form-data">
                   @csrf 
 
                         <input hidden type="number" id="id" name="id" value="{{$mayashope['id']}}" required>

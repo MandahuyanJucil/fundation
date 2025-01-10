@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://localhost/dashboard/fundation/public/css/Mayaform.css">
+    <link rel="stylesheet" href="/css/Mayaform.css">
     <title>Mayashope oneime</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
 
             <div class="main_second_div">
             <div class="main_second_div_top">
-                <a href="http://localhost/dashboard/fundation/public/mayashope_onrtime_record"><img src="http://localhost/dashboard/fundation/public/img/arrow.png" alt="arrow"></a>
+                <a href="/mayashope_onrtime_record"><img src="/img/arrow.png" alt="arrow"></a>
                 <h2> Mayashope Onetime form</h2>
             </div>
 
@@ -36,7 +36,7 @@
 
               <div class="footer_2">
 
-              <form action="http://localhost/dashboard/fundation/public/mayashope_onetime" method="POST"  enctype="multipart/form-data">
+              <form action="/mayashope_onetime" method="POST"  enctype="multipart/form-data">
                   @csrf 
                         <label for="child_name">Name</label>
                         <input type="text" id="child_name" name="child_name" required>

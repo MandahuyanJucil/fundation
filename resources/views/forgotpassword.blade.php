@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://localhost/dashboard/fundation/public/css/forgotpassword.css">
+    <link rel="stylesheet" href="/css/forgotpassword.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -34,7 +34,7 @@
 
              <div class="second_div_logo">
                 
-                    <img src="http://localhost/dashboard/fundation/public/img/logo.png" alt="logo" class="Logo">
+                    <img src="/img/logo.png" alt="logo" class="Logo">
                     <h3>SIGN IN</h3>
              </div>
                   

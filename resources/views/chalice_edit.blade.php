@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://localhost/dashboard/fundation/public/css/Add_event.css">
+    <link rel="stylesheet" href="/css/Add_event.css">
     <title>accountInformation</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
 
             <div class="main_second_div">
             <div class="main_second_div_top">
-                <a href="http://localhost/dashboard/fundation/public/chalice"><img src="http://localhost/dashboard/fundation/public/img/arrow.png" alt="arrow"></a>
+                <a href="/chalice"><img src="/img/arrow.png" alt="arrow"></a>
                 <h2>Maya's Hope</h2>
             </div>
 
@@ -33,7 +33,7 @@
 
            
 
-              <form action="http://localhost/dashboard/fundation/public/chalice_edit" method="POST" enctype="multipart/form-data">
+              <form action="/chalice_edit" method="POST" enctype="multipart/form-data">
                   @csrf
 
                   <fieldset>

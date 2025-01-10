@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://localhost/dashboard/fundation/public/css/chalice_edit.css">
+    <link rel="stylesheet" href="/css/chalice_edit.css">
     <title>accountInformation</title>
 </head>
 <body>
@@ -13,27 +13,27 @@
 
             <div class="main_second_div">
             <div class="main_second_div_top">
-                <a href="http://localhost/dashboard/fundation/public/chalice"><img src="http://localhost/dashboard/fundation/public/img/arrow.png" alt="arrow"></a>
+                <a href="/chalice"><img src="/img/arrow.png" alt="arrow"></a>
                 <h2>Maya's Hope</h2>
             </div>
 
             <div class="main_3rd_div">
                 <div class="main_3rd_div_1">
-                   <img src="http://localhost/dashboard/fundation/public/storage/{{$chalice['image']}}" alt="Child">
+                   <img src="/storage/{{$chalice['image']}}" alt="Child">
                 </div>
 
                 <!-- <div class="main_3rd_div_2">
                          <h3>{{$chalice['fname']}}</h3>
                          <h4>{{$chalice['id']}}</h4>
                            <div class="main_3rd_div_2_container">
-                                <p>SPONSORED</p> <img src="http://localhost/dashboard/fundation/public/img/triangle.png" alt="arrow down">
+                                <p>SPONSORED</p> <img src="/img/triangle.png" alt="arrow down">
                            </div>
                 </div> -->
                 
                     
                 <div class="main_3rd_div_3">
-                <!--         <a href="http://localhost/dashboard/fundation/public/chalice_edit_edit">CANCEL</a>
-                        <a href="http://localhost/dashboard/fundation/public/chalice_edit_edit">UPDATE</a> -->
+                <!--         <a href="/chalice_edit_edit">CANCEL</a>
+                        <a href="/chalice_edit_edit">UPDATE</a> -->
                 </div>
             </div>
 
@@ -49,7 +49,7 @@
 
               <div class="footer_2">
 
-              <form action="http://localhost/dashboard/fundation/public/chalice_Edit" method="POST" enctype="multipart/form-data">
+              <form action="/chalice_Edit" method="POST" enctype="multipart/form-data">
                   @csrf
                         <label for="fname">NAME:</label>
                         <input hidden type="number" id="id" name="id" value="{{$chalice['id']}}" required>

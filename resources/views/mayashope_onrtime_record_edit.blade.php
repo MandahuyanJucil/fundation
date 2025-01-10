@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://localhost/dashboard/fundation/public/css/Mayaform.css">
+    <link rel="stylesheet" href="/css/Mayaform.css">
     <title>Mayashope oneime</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
 
             <div class="main_second_div">
             <div class="main_second_div_top">
-                <a href="http://localhost/dashboard/fundation/public/mayashope_onrtime_record"><img src="http://localhost/dashboard/fundation/public/img/arrow.png" alt="arrow"></a>
+                <a href="/mayashope_onrtime_record"><img src="/img/arrow.png" alt="arrow"></a>
                 <h2> Mayashope Onetime form Edit</h2>
             </div>
 
@@ -29,13 +29,13 @@
 
          <div class="footer_container">
          <div class="main_3rd_div_1">
-    <!--                <img src="http://localhost/dashboard/fundation/public/storage/{{$maya['image']}}" alt="Child"> -->
+    <!--                <img src="/storage/{{$maya['image']}}" alt="Child"> -->
                 </div>
               
 
               <div class="footer_2">
 
-              <form action="http://localhost/dashboard/fundation/public/edit" method="POST"  enctype="multipart/form-data">
+              <form action="/edit" method="POST"  enctype="multipart/form-data">
                   @csrf 
                   <input hidden type="number" id="id" name="id" value="{{$maya['id']}}" >
                         <label for="child_name">Child Name</label>
@@ -101,7 +101,9 @@
                     <input type="text" id="remarks" name="remarks" value="{{$maya['remarks']}}" >
                     <br>
 
-                 
+                    <label for="summary2">Summary2</label>
+                    <input type="date" id="summary2" name="summary2"  value="{{$maya['summary2']}}"  >
+                    <br>
                     <label for="description2">Description 2</label>
                     <input type="text" id="description2" name="description2" value="{{$maya['description2']}}" >
                     <br>
@@ -115,7 +117,9 @@
                     <input type="text" id="remarks2" name="remarks2" value="{{$maya['remarks2']}}" >
                     <br>
 
-                  
+                    <label for="summary3">Summary3</label>
+                    <input type="date" id="summary3" name="summary3"  value="{{$maya['summary3']}}"  >
+                    <br>
                     <label for="description3">Description 3</label>
                     <input type="text" id="description3" name="description3" value="{{$maya['description3']}}" >
                     <br>
@@ -129,7 +133,9 @@
                     <input type="text" id="remarks3" name="remarks3" value="{{$maya['remarks3']}}" >
                     <br>
 
-                  
+                    <label for="summary4">Summary4</label>
+                    <input type="date" id="summary4" name="summary4"  value="{{$maya['summary4']}}"  >
+                    <br>
                     <label for="description4">Description 4</label>
                     <input type="text" id="description4" name="description4" value="{{$maya['description4']}}" >
                     <br>
@@ -143,6 +149,10 @@
                     <input type="text" id="remarks4" name="remarks4" value="{{$maya['remarks4']}}" >
                     <br>
 
+
+                    <label for="summary5">Summary5</label>
+                    <input type="date" id="summary5" name="summary5"  value="{{$maya['summary5']}}"  >
+                    <br>
                     <label for="description5">Description 5</label>
                     <input type="text" id="description5" name="description5" value="{{$maya['description5']}}" >
                     <br>
@@ -156,7 +166,9 @@
                     <input type="text" id="remarks5" name="remarks5" value="{{$maya['remarks5']}}" >
                     <br>
 
-                    
+                    <label for="summary6">Summary6</label>
+                    <input type="date" id="summary6" name="summary6"  value="{{$maya['summary6']}}"  >
+                    <br>
                     <label for="description6">Description 6</label>
                     <input type="text" id="description6" name="description6" value="{{$maya['description6']}}" >
                     <br>

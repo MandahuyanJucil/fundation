@@ -319,7 +319,7 @@ footer a:hover {
             <h2>Account Information</h2>
 
           
-                <a href="http://localhost/dashboard/fundation/public/create_account" class="create-new">
+                <a href="/create_account" class="create-new">
                  
                     <span>CREATE NEW</span>
                 </a>
@@ -352,9 +352,9 @@ footer a:hover {
 
                          <div class="a">
                                  
-                                    <a href = {{"accouninformation_delete/".$data['id']}}><img src="http://localhost/dashboard/fundation/public/img/delete.png" alt="edit"></a>
+                                    <a href = {{"accouninformation_delete/".$data['id']}}><img src="/img/delete.png" alt="edit"></a>
                                     <br>
-                                    <a href=  {{"accouninformation_print/".$data['id']}}><img src="http://localhost/dashboard/fundation/public/img/print.png" alt="edit"></a> </div>
+                                    <a href=  {{"accouninformation_print/".$data['id']}}><img src="/img/print.png" alt="edit"></a> </div>
                            
                         
                          </td>

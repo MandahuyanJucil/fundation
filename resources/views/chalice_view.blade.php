@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://localhost/dashboard/fundation/public/css/chalice_view.css">
+    <link rel="stylesheet" href="/css/chalice_view.css">
     <title>chalice view</title>
 </head>
 <body>
@@ -12,13 +12,13 @@
 
             <div class="main_second_div">
             <div class="main_second_div_top">
-                <a href="http://localhost/dashboard/fundation/public/chalice"><img src="http://localhost/dashboard/fundation/public/img/arrow.png" alt="arrow"></a>
+                <a href="/chalice"><img src="/img/arrow.png" alt="arrow"></a>
                 <h2>Maya's Hope</h2>
             </div>
 
             <div class="main_3rd_div">
                 <div class="main_3rd_div_1">
-                   <img src="http://localhost/dashboard/fundation/public/storage/{{$chalice['image']}}" alt="Child">
+                   <img src="/storage/{{$chalice['image']}}" alt="Child">
                 </div>
 
                
@@ -41,7 +41,7 @@
 
               <div class="footer_2">
 
-              <form action="http://localhost/dashboard/fundation/public/chalice_Edit" method="POST" enctype="multipart/form-data" style="max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; font-family: Arial, sans-serif; background-color: #f9f9f9;">
+              <form action="/chalice_Edit" method="POST" enctype="multipart/form-data" style="max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; font-family: Arial, sans-serif; background-color: #f9f9f9;">
   @csrf
   
   <div style="margin-bottom: 15px;">

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://localhost/dashboard/fundation/public/css/ourstory.css">
+    <link rel="stylesheet" href="/css/ourstory.css">
     <title>Our Story - BCFI</title>
     <style>
         .back-button {
@@ -29,7 +29,7 @@
 
        
     <div class="container">
-        <a class="back-button" href="http://localhost/dashboard/fundation/public/forviewing">&#8592; Back</a>
+        <a class="back-button" href="/forviewing">&#8592; Back</a>
 
         <h1>Our Story</h1>
         <p>

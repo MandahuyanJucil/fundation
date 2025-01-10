@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://localhost/dashboard/fundation/public/css/summary_view.css">
+    <link rel="stylesheet" href="/css/summary_view.css">
     <title>Maya's Hope</title>
 </head>
 <body>
@@ -22,41 +22,41 @@
             </div>
             
             <div class="main_first_div_container h2">
-               <a href="http://localhost/dashboard/fundation/public/admin_dasboard">Dashboard</a> 
+               <a href="/admin_dasboard">Dashboard</a> 
             </div>
 
             <div class="main_first_div_container h3">
-               <a href="http://localhost/dashboard/fundation/public/accoutinformation">
+               <a href="/accoutinformation">
                <h3 class="h3">Account Information</h3></a> 
             </div>
 
             <div class="main_first_div_container h2">
-                <a href="http://localhost/dashboard/fundation/public/events"><h2 class="h3"class="h2">Events</h2></a>
+                <a href="/events"><h2 class="h3"class="h2">Events</h2></a>
             </div>
 
             <div class="main_first_div_container h3">
            
-                <a href="http://localhost/dashboard/fundation/public/chalice"> 
+                <a href="/chalice"> 
                 <h3 class="h3">Maya's Hope<p>One time Support</p></h3></a>
                 
             </div>
 
             <div class="main_first_div_container h3">
            
-           <a href="http://localhost/dashboard/fundation/public/mayashope">
+           <a href="/mayashope">
            <h3 class="h3"> Chalice</h3></a>
            
        </div>
 
             <div class="main_first_div_container h3">
-            <a href="http://localhost/dashboard/fundation/public/mayashope">
+            <a href="/mayashope">
             <h3 class="h3">Maya's Hope<p>Life time Support</p></h3></a>
             </div>
 
    
 
             <div class="main_first_div_container h3">
-           <a href="{{route('logout')}}" class="logout"> <img src="http://localhost/dashboard/fundation/public/img/logout.png" alt="" class="icon">LOG OUT </a>  
+           <a href="{{route('logout')}}" class="logout"> <img src="/img/logout.png" alt="" class="icon">LOG OUT </a>  
             </div>
 </div>
 
@@ -78,7 +78,7 @@
              <div class="main_div3_container_search">
              
                  <div class="main_div3_container_search_divider">
-                    <img src="http://localhost/dashboard/fundation/public/img/search.png" alt="search"> 
+                    <img src="/img/search.png" alt="search"> 
                  </div>
              </div>
 

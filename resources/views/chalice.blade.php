@@ -266,10 +266,10 @@ footer a:hover {
         <div class="main_second_div">
             <h2>Maya's Hope Sponsored</h2>
 
-            <form action="http://localhost/dashboard/fundation/public/search_chalice" method="get" class="search-form">
+            <form action="/search_chalice" method="get" class="search-form">
                 <input type="text" name="search" placeholder="Search..." class="search-input">
                 <button type="submit" class="search-button">Search</button>
-                <a href="http://localhost/dashboard/fundation/public/chalice_edit" class="create-new">
+                <a href="/chalice_edit" class="create-new">
                     <span>CREATE NEW</span>
                 </a>
             </form>
@@ -300,13 +300,13 @@ footer a:hover {
                                 <td>{{$data['status']}}</td>
                                 <td class="actions">
                                     <a href="{{'chalice_edit_edit/'.$data['id']}}">
-                                        <img src="http://localhost/dashboard/fundation/public/img/edit.png" alt="Edit">
+                                        <img src="/img/edit.png" alt="Edit">
                                     </a>
                                     <a href="{{'chalice_delete/'.$data['id']}}">
-                                        <img src="http://localhost/dashboard/fundation/public/img/delete.png" alt="Delete">
+                                        <img src="/img/delete.png" alt="Delete">
                                     </a>
                                     <a href="{{'chalice_print/'.$data['id']}}">
-                                        <img src="http://localhost/dashboard/fundation/public/img/print.png" alt="Print">
+                                        <img src="/img/print.png" alt="Print">
                                     </a>
                                 </td>
                             </tr>

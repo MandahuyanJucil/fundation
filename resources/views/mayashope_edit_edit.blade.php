@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://localhost/dashboard/fundation/public/css/chalice_edit.css">
+    <link rel="stylesheet" href="/css/chalice_edit.css">
     <title>MAYA'S HOPE</title>
 </head>
 <body>
@@ -15,13 +15,13 @@
 
             <div class="main_second_div">
             <div class="main_second_div_top">
-                <a href="http://localhost/dashboard/fundation/public/mayashope"><img src="http://localhost/dashboard/fundation/public/img/arrow.png" alt="arrow"></a>
+                <a href="/mayashope"><img src="/img/arrow.png" alt="arrow"></a>
                 <h2>MAYA'S HOPE</h2>
             </div>
 
             <div class="main_3rd_div">
                 <div class="main_3rd_div_1">
-                   <img src="http://localhost/dashboard/fundation/public/img/child.jfif" alt="Child">
+                   <img src="/img/child.jfif" alt="Child">
                 </div>
 
                 <div class="main_3rd_div_2">
@@ -29,14 +29,14 @@
                          <h4>"MARIA"</h4>
                          <h4>123QWERTY</h4>
                            <div class="main_3rd_div_2_container">
-                                <p>SPONSORED</p> <img src="http://localhost/dashboard/fundation/public/img/triangle.png" alt="arrow down">
+                                <p>SPONSORED</p> <img src="/img/triangle.png" alt="arrow down">
                            </div>
                 </div>
                 
                     
                 <div class="main_3rd_div_3">
                         <a href="#dowload">DOWLOAD</a>
-                        <a href="http://localhost/dashboard/fundation/public/mayashope_edit">EDIT</a>
+                        <a href="/mayashope_edit">EDIT</a>
                 </div>
             </div>
 

@@ -279,10 +279,10 @@ table th {
         <div class="main_second_div">
             <h2>Mayashope Onetime</h2>
 
-            <form action="http://localhost/dashboard/fundation/public/search_mayaonetime" method="get" class="search-form">
+            <form action="/search_mayaonetime" method="get" class="search-form">
                 <input type="text" name="search" placeholder="Search..." class="search-input">
                 <button type="submit" class="search-button">Search</button>
-                <a href="http://localhost/dashboard/fundation/public/mayashope_onetime" class="create-new">
+                <a href="/mayashope_onetime" class="create-new">
                     <span>CREATE NEW</span>
                 </a>
             </form>
@@ -312,9 +312,9 @@ table th {
                                 <td>{{$data['no_of_surgery_done']}}</td>
                                 <td>{{$data['date_of_surgery']}}</td>
                                 <td class="actions">
-                                    <a href={{"mayashope_onrtime_record_edit/".$data['id']}}><img src="http://localhost/dashboard/fundation/public/img/edit.png" alt="edit"></a>
-                                    <a href={{"mayashope_onrtime_record_delete/".$data['id']}}><img src="http://localhost/dashboard/fundation/public/img/delete.png" alt="delete"></a>
-                                    <a href={{"mayashope_onrtime_record_print/".$data['id']}}><img src="http://localhost/dashboard/fundation/public/img/print.png" alt="print"></a>
+                                    <a href={{"mayashope_onrtime_record_edit/".$data['id']}}><img src="/img/edit.png" alt="edit"></a>
+                                    <a href={{"mayashope_onrtime_record_delete/".$data['id']}}><img src="/img/delete.png" alt="delete"></a>
+                                    <a href={{"mayashope_onrtime_record_print/".$data['id']}}><img src="/img/print.png" alt="print"></a>
                                 </td>
                             </tr>
                             @endforeach

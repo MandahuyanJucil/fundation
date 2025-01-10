@@ -244,10 +244,10 @@ span {
         <div class="main_second_div">
             <h2>Chalice</h2>
 
-            <form action="http://localhost/dashboard/fundation/public/search" method="get" class="search-form">
+            <form action="/search" method="get" class="search-form">
                 <input type="text" name="search" placeholder="Search..." class="search-input">
                 <button type="submit" class="search-button">Search</button>
-                <a href="http://localhost/dashboard/fundation/public/mayaform" class="create-new">
+                <a href="/mayaform" class="create-new">
                     <span>CREATE NEW</span>
                 </a>
             </form>
@@ -277,9 +277,9 @@ span {
                                 <td>{{$data['created_at']}}</td> <!-- Displaying date created -->
                                 <td>{{$data['evaluation']}}</td>
                                 <td class="actions">
-                                    <a href={{"mayashope_edit/".$data['id']}}><img src="http://localhost/dashboard/fundation/public/img/edit.png" alt="edit"></a>
-                                    <a href={{"mayashope_delete/".$data['id']}}><img src="http://localhost/dashboard/fundation/public/img/delete.png" alt="delete"></a>
-                                    <a href={{"mayaform_print/".$data['id']}}><img src="http://localhost/dashboard/fundation/public/img/print.png" alt="print"></a>
+                                    <a href={{"mayashope_edit/".$data['id']}}><img src="/img/edit.png" alt="edit"></a>
+                                    <a href={{"mayashope_delete/".$data['id']}}><img src="/img/delete.png" alt="delete"></a>
+                                    <a href={{"mayaform_print/".$data['id']}}><img src="/img/print.png" alt="print"></a>
                                 </td>
                             </tr>
                         @endforeach

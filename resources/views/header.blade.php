@@ -159,32 +159,32 @@ a {
 <body>
 <nav class="header-navbar">
     <div class="navbar-logo">
-        <img src="http://localhost/dashboard/fundation/public/img/logo.png" alt="Logo">
+        <img src="/img/logo.png" alt="Logo">
     </div>
 
     <div class="dropdown-container">
         <button class="dropdown-button" onclick="toggleDropdown()">Menu</button>
         <div id="dropdown-menu" class="dropdown-content">
             <div class="menu-item">
-                <a  class="aaa" href="http://localhost/dashboard/fundation/public/admin_dasboard"><h3>Dashboard</h3></a>
+                <a  class="aaa" href="/admin_dasboard"><h3>Dashboard</h3></a>
             </div>
             <div class="menu-item">
-                <a class="aaa" href="http://localhost/dashboard/fundation/public/accoutinformation"><h3>Account Information</h3></a>
+                <a class="aaa" href="/accoutinformation"><h3>Account Information</h3></a>
             </div>
             <div class="menu-item">
-                <a class="aaa" href="http://localhost/dashboard/fundation/public/events"><h3>Events</h3></a>
+                <a class="aaa" href="/events"><h3>Events</h3></a>
             </div>
             <div class="menu-item">
-                <a class="aaa" href="http://localhost/dashboard/fundation/public/chalice"><h3>Maya's Hope<p>Sponsored</p></h3></a>
+                <a class="aaa" href="/chalice"><h3>Maya's Hope<p>Sponsored</p></h3></a>
             </div>
             <div class="menu-item">
-                <a class="aaa" href="http://localhost/dashboard/fundation/public/mayashope"><h3>Chalice</h3></a>
+                <a class="aaa" href="/mayashope"><h3>Chalice</h3></a>
             </div>
             <div class="menu-item">
-                <a class="aaa" href="http://localhost/dashboard/fundation/public/mayashope_onrtime_record"><h3>Maya's Hope <p>One Time Support</p></h3></a>
+                <a class="aaa" href="/mayashope_onrtime_record"><h3>Maya's Hope <p>One Time Support</p></h3></a>
             </div>
             <div class="menu-item">
-                <a class="aaa" href="http://localhost/dashboard/fundation/public/mayaform"><h3>Qualification Form</h3></a>
+                <a class="aaa" href="/mayaform"><h3>Qualification Form</h3></a>
             </div>
             <div class="menu-item">
                 <a href="{{ route('logout') }}" class="logout"><h3>Log Out</h3></a>

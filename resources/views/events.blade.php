@@ -266,8 +266,8 @@ span{
         <div class="main_second_div">
             <h2>Events</h2>
 
-            <form action="http://localhost/dashboard/fundation/public/event_search" method="get" class="search-form">
-                <a href="http://localhost/dashboard/fundation/public/add_events" class="create-new">
+            <form action="/event_search" method="get" class="search-form">
+                <a href="/add_events" class="create-new">
                     <span>CREATE NEW</span>
                 </a>
             </form>
@@ -291,8 +291,8 @@ span{
                                 <td>{{$data['date']}}</td>
                                 <td>{{$data['location']}}</td>
                                 <td class="actions">
-                                    <a href = {{"events_edit/".$data['id']}}><img src="http://localhost/dashboard/fundation/public/img/edit.png" alt="edit"></a>
-                                    <a href = {{"events_delete/".$data['id']}}><img src="http://localhost/dashboard/fundation/public/img/delete.png" alt="edit"></a>
+                                    <a href = {{"events_edit/".$data['id']}}><img src="/img/edit.png" alt="edit"></a>
+                                    <a href = {{"events_delete/".$data['id']}}><img src="/img/delete.png" alt="edit"></a>
                                 </td>
                             </tr>
                             @endforeach

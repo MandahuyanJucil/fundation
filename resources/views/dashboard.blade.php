@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://localhost/dashboard/fundation/public/css/Dashboard.css">
+    <link rel="stylesheet" href="/css/Dashboard.css">
     <title>Dashboard</title>
 </head>
 <body>
     <header id="header">
          <div class="header_mainbox">
               <div class="header_picture">
-                    <img src="http://localhost/dashboard/fundation/public/img/logo.png" alt="logo" class="header_logo">
+                    <img src="/img/logo.png" alt="logo" class="header_logo">
               </div>
 
               <div class="header_navigation">
-                 <!-- <a href="http://localhost/dashboard/fundation/public/bdo">Support Us</a>
+                 <!-- <a href="/bdo">Support Us</a>
                  <a href="">CONTACT US</a>
-                 <a href="http://localhost/dashboard/fundation/public/BENEFICIARY">BE A BENIFECIARY</a> -->
+                 <a href="/BENEFICIARY">BE A BENIFECIARY</a> -->
                  <div class="login">
-                    <a href="http://localhost/dashboard/fundation/public/login" class="login-button">LOG IN</a>
+                    <a href="/login" class="login-button">LOG IN</a>
                 </div>
                 
               

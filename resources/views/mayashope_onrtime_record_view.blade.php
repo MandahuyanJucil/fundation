@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://localhost/dashboard/fundation/public/css/Mayaform.css">
+    <link rel="stylesheet" href="/css/Mayaform.css">
     <title>Maya's Hope Surgery Record</title>
     <style>
 /* General Styles */
@@ -129,8 +129,8 @@ img {
     <main id="main">
         <div class="main_second_div">
             <div class="main_second_div_top">
-                <a href="http://localhost/dashboard/fundation/public/mayashope_onrtime_record">
-                    <img src="http://localhost/dashboard/fundation/public/img/arrow.png" alt="Back">
+                <a href="/mayashope_onrtime_record">
+                    <img src="/img/arrow.png" alt="Back">
                 </a>
                 <h2>Maya's Hope Surgery Record</h2>
             </div>
@@ -190,7 +190,7 @@ img {
             </table>
            
         </div>
-        <img src="http://localhost/dashboard/fundation/public/storage/{{$maya['image']}}" alt="image">
+        <img src="/storage/{{$maya['image']}}" alt="image">
     </main>
 
     <footer id="footer">

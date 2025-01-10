@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://localhost/dashboard/fundation/public/css/Bdo.css">
+    <link rel="stylesheet" href="/css/Bdo.css">
     <title>DONATION</title>
 </head>
 <body>
     <header id="header">
         <div class="header_container">
-           <a href="http://localhost/dashboard/fundation/public/dashboard"><img src="http://localhost/dashboard/fundation/public/img/arrow.png" alt=""></a> 
+           <a href="/dashboard"><img src="/img/arrow.png" alt=""></a> 
             <h2>DONATION</h2>
         </div>
     </header> 
@@ -25,7 +25,7 @@
 
           <div class="main_container_3">
               <div class="main_container_3_1">
-                   <img src="http://localhost/dashboard/fundation/public/img/bdo.png" alt="">
+                   <img src="/img/bdo.png" alt="">
                    <h4 class="line" >Account Name</h4>
                    <p>bSYMP BLESS THE CHILDREN</p>
                    <h4>Account Number</h4>
@@ -35,7 +35,7 @@
               </div>
 
               <div class="main_container_3_2">
-                   <img src="http://localhost/dashboard/fundation/public/img/bpi.png" alt="">
+                   <img src="/img/bpi.png" alt="">
                    <h4  class="line">Account Name</h4>
                    <p>bSYMP BLESS THE CHILDREN</p>
                    <h4>Account Number</h4>
@@ -51,7 +51,7 @@
 
           <div class="main_container_3">
              <div class="main_container_5_1">
-                   <img src="http://localhost/dashboard/fundation/public/img/gcash.png" alt="">
+                   <img src="/img/gcash.png" alt="">
                    <h4>Account Name</h4>
                    <p>bSYMP BLESS THE CHILDREN</p>
                    <h4>Account Number</h4>
@@ -59,7 +59,7 @@
               </div>
 
               <div class="main_container_5_2">
-                   <img src="http://localhost/dashboard/fundation/public/img/paymaya.png" alt="">
+                   <img src="/img/paymaya.png" alt="">
                    <h4>Account Name</h4>
                    <p>bSYMP BLESS THE CHILDREN</p>
                    <h4>Account Number</h4>
