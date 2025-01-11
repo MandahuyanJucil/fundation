@@ -165,7 +165,7 @@ class Mayashope_controller extends Controller
         else  $maya->status="Reject";
         
         $maya->save();
-        return view('dasboard_admin');
+        return view('mayaform');
 
  }
 

@@ -44,9 +44,11 @@ form {
 }
 
 form label {
-  display: block;
+  text-align: left;
+  display: inline-block;
   margin: 10px 0 5px;
   font-weight: bold;
+  width: 100%;
 }
 
 form input,
@@ -97,3 +99,4 @@ footer {
   text-align: center;
   margin-top: 20px;
 }
+

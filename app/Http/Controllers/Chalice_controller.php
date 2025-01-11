@@ -137,7 +137,7 @@ class Chalice_controller extends Controller
         
         $chalice->save();
     
-        return view('dasboard_admin');
+        return view('chalice_edit');
      }
 
      function edit(Request $req){
@@ -170,7 +170,7 @@ class Chalice_controller extends Controller
         }
            
             $data->save();
-            return redirect('admin_dasboard');  
+            return redirect('chalice');  
           
      }
 

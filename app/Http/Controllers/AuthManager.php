@@ -489,7 +489,7 @@ function forgotpasswordPost(Request $request)
             if(!$user){
                 return redirect(route('create_accountPost'))->with("error","Register fail");
             }
-            return redirect(route('dasboard_admin'))->with("Succes","Register Succes");
+            return redirect(route('create_account'))->with("Succes","Register Succes");
     }
 
 

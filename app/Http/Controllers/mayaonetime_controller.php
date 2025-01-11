@@ -120,7 +120,7 @@ class mayaonetime_controller extends Controller
         }
    
         $maya->save();
-        return view('dasboard_admin');
+        return view('mayashope_onetime');
 
  }
 
@@ -331,7 +331,7 @@ if(!empty($req->image)){
 }
    
     $data->save();
-    return redirect('admin_dasboard');  
+    return redirect('mayashope_onrtime_record');  
   
 }
 

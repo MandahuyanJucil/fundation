@@ -46,7 +46,7 @@ class Events_controller extends Controller
             $event->image4=$fileName;
         }
         $event->save();
-        return view('dasboard_admin');
+        return view('add_events');
 
  }
 
